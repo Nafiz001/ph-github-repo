@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+.fg{
+    display: grid;
+    grid-template-rows:0fr 1fr;
+    gap: 90px;
+    max-width: 2400px;
+    width: 100%;
+    
+}
+.top{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.fb{
+    padding: 14px 16px ;
+    color: #1877F2;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+.e{
+    padding: 5px 16px ;                 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#email, #pass {
+    width: 100%;
+    height: 42px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#email:focus, #pass:focus {
+    border-color: #1877F2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+#fa{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+
+}
+#login {
+    width: 40%;
+    height: 40px;
+    background: linear-gradient(#42a5f5, #1877F2);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#login:hover {
+    background: linear-gradient(#369ae8, #166fe5);
+    transform: translateY(-1px);
+}
+
+#login:active {
+    transform: translateY(0);
+}
+#fa:hover{
+    text-decoration: underline;
+    
+}
+
+.bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.divider {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 20px 0;
+}
+.form{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+h3,h5{
+    padding: 14px 16px;
+}
+#c,#s{
+    float: right;
+    width: 20%;
+    height: 40px;
+    background: linear-gradient(#42a5f5, #1877F2);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+#eil{
+    border-radius: 6px;
+    font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 0;
+    padding: 16px 0 16px 16px;
+    width: 444px;
+}
