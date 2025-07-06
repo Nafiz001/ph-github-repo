@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z survey form</title>
+    <link rel="stylesheet" href="dragonballz.css">
+</head>
+<body>
+    <h1>Dragon Ball Z</h1>
+    <p>Relive the nostalgia</p>
+    <form>
+        <fieldset>
+            <label for="name">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+            <label for="email">Email <input placeholder="Enter your email" type="email" id="email"required></label>
+            <label for="age">Age <input placeholder="Age" type="number" id="age" min="12" max="100" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="job">
+                Who are you?
+                <select name="job" id="job" required>
+                    <option value="">
+                        Select one
+                    </option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Buisinessman</option>
+                    <option value="4">Prefer not to say</option>
+                </select>
+            </label>
+            <label for="char">
+                Which is your Favorite Character?
+                <select name="char" id="char" required>
+                    <option value="">
+                        Select one
+                    </option>
+                    <option value="1">Son goku</option>
+                    <option value="2">Vegeta</option>
+                    <option value="3">Gohan</option>
+                    <option value="4">Trunks</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend Dragon Ball Z to others?</legend>
+            <label for="100"><input type="radio" class="inline" name="i" id="100" checked> 100%</label>
+            <label for="Maybe"><input type="radio" class="inline" name="i"  id="Maybe"> Maybe</label>
+            <label for="nr"><input type="radio" class="inline" name="i"  id="nr"> Not really</label>
+                
+            
+            <legend>Which movie(s) did you like?</legend>
+            <label>
+                <input type="checkbox" class="inline" id="movie"> Dead Zone (1989)
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> The World's Strongest (1990)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> The Tree of Might (1990)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> Super Android 13! (1992)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> Broly – The Legendary Super Saiyan (1993)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> Bojack Unbound (1993)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> Battle of Gods (2013)
+
+            </label>
+            <label>
+                <input type="checkbox" id="movie" class="inline"> Other
+
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="feeling">How did it affect your childhood?
+                <textarea rows="5" cols="30" name="feeling" id="feeling" placeholder="Write here..."></textarea>
+            </label>
+            <label for="submit">
+                <button type="submit" id="submit">Submit</button>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
